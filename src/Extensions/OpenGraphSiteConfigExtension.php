@@ -4,11 +4,11 @@ namespace TractorCow\OpenGraph\Extensions;
 
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
-use SilverStripe\ORM\DataExtension;
+use SilverStripe\Core\Extension;
 use TractorCow\OpenGraph\Interfaces\IOGApplication;
 use TractorCow\OpenGraph\OpenGraph;
 
-class OpenGraphSiteConfigExtension extends DataExtension implements IOGApplication
+class OpenGraphSiteConfigExtension extends Extension implements IOGApplication
 {
     public function extraStatics($class = null, $extension = null)
     {
