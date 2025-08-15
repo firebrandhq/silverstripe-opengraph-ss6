@@ -113,7 +113,7 @@ class OpenGraphObjectExtension extends Extension implements IOGObjectExplicit
         return new $class();
     }
 
-    public function MetaTags(&$tags)
+    public function updateMetaTags(&$tags)
     {
         // Generate tag builder
         $builder = $this->owner->getTagBuilder();
